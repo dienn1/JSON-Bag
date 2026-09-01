@@ -50,8 +50,6 @@ tokenize(collection, prefix='', ordered=True, mode="both",
 - `binning` — floor `x`/`y` coordinate values to multiples of 2.
 - `pair_xy` — merge `x`/`y` pairs into a single combined token.
 
-The first three options above mirror the research pipeline's per-game configuration; the last two are experimental knobs kept for output parity with the paper's codebase.
-
 ## Usage
 
 ### Library
@@ -86,5 +84,5 @@ python tokenizer_test.py
 ```
 
 ## TODO
-- Scripts to make prototype
+- Scripts to make prototype + feature selection with Random Forest
 - Raw data from JSON-Bag value functions paper
