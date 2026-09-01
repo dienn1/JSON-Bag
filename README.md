@@ -26,12 +26,12 @@ Example — `{"players": [{"score": 10}]}` tokenizes (default `mode="both"`) to:
 
 ## Modes
 
-| `mode` | Tokens emitted |
-|---|---|
+| `mode`             | Tokens emitted                                                        |
+| ------------------ | --------------------------------------------------------------------- |
 | `"both"` (default) | positional `[i]` **and** flattened companion tokens for list elements |
-| `"ordered"` | only positional `[i]` tokens |
-| `"unordered"` | only flattened tokens (list indices dropped) |
-| `"char"` | degenerate: character frequencies of `str(state)` |
+| `"ordered"`        | only positional `[i]` tokens                                          |
+| `"unordered"`      | only flattened tokens (list indices dropped)                          |
+| `"char"`           | degenerate: character frequencies of `str(state)`                     |
 
 **Trajectory caveat:** when the input is a *list of states* (a trajectory) rather than a single state dict, pass `ordered=False` so the states themselves don't receive positional prefixes.
 
@@ -75,14 +75,10 @@ cat game_state.json | python tokenizer.py           # stdin also works
 
 ## Requirements
 
-Python 3.13+ (as used in the original research). **Standard library only** — no third-party dependencies, no install step.
+Python 3.13+
 
 ## Tests
 
 ```bash
 python tokenizer_test.py
 ```
-
----
-
-*Generated: 2026-08-31T03:30Z · GLM-5.3-Flash (via OpenCode Go) · agent-authored, human-approved plan*
