@@ -84,3 +84,7 @@ Python 3.13+
 ```bash
 python tokenizer_test.py
 ```
+
+## TODO
+- Scripts to make prototype
+- Raw data from JSON-Bag value functions paper
