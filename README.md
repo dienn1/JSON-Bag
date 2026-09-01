@@ -82,6 +82,7 @@ tokenize(state, mode="unordered", num_suffix_frequency=True)
 ```
 
 ## Usage
+It is recommended to use `mode='both'` and `num_suffix_frequency=True` together with a feature selection method. (This exact config is used in the [JSON-Bag VF paper](https://arxiv.org/abs/2608.30056) together with Random Forest MDI feature-selection)
 
 ### Library
 
