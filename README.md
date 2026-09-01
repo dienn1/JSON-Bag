@@ -47,8 +47,8 @@ tokenize(collection, prefix='', ordered=True, mode="both",
 
 - `num_suffix_frequency` — for a numeric value `n > 0` at path `X`, also add the value-stripped path token `X` with frequency `+= n`, so quantities act as token **weights** instead of being locked inside token strings. Booleans, floats, and non-positive/sentinel values (`0`, `-1`, ...) are excluded. Examples below.
 - `filter_player` — skip every dict containing `"player" > 0` (multi-player hidden-information ablation).
-- `binning` — floor `x`/`y` coordinate values to multiples of 2.
-- `pair_xy` — merge `x`/`y` pairs into a single combined token.
+- `binning` — floor `x`/`y` coordinate values to multiples of 2. (experimental)
+- `pair_xy` — merge `x`/`y` pairs into a single combined token.  (experimental)
 
 ### `num_suffix_frequency` examples
 
