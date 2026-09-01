@@ -1,8 +1,9 @@
 # JSON-Bag
 
-Minimal, dependency-free implementation of the **JSON-Bag tokenizer**: it turns a JSON game state into a bag-of-tokens (a token-frequency dict), giving a simple game-agnostic representation for learning and analysis. No game-specific code, no analysis scripts — just the tokenizer.
+Minimal, dependency-free implementation of the **JSON-Bag tokenizer**: it turns a JSON game state into a bag-of-tokens (a token-frequency dict), giving a simple game-agnostic representation for learning and analysis. No game-specific code needed.
 
-Introduced in the JSON-Bag paper (IEEE CoG 2025).
+Introduced in "JSON-Bag: A generic game trajectory representation" (IEEE CoG 2025): https://arxiv.org/abs/2508.00712.
+A demonstration on how to use this framework to make game agnostic value functions "Game-Agnostic Value Functions through Automatic JSON Feature Extraction" (IEEE CoG 2026): https://arxiv.org/abs/2608.30056
 
 ## Concept
 
